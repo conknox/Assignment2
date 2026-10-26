@@ -11,7 +11,7 @@ MONTHS_PER_YEAR = 9
 CLASS_DAYS_PER_SEMESTER = 75
 CS1430_CREDITS = 3
 CS1430_MEETINGS_PER_SEMESTER = 45
-
+COST_OF_BIGMAC = 5.91
 
 # ---- FUNCTIONS: replace each return 0 ----
 
@@ -41,6 +41,11 @@ def cost_per_class(annual_cost, credits):
     return annual_cost * CS1430_CREDITS / (SEMESTERS_PER_YEAR * credits * CS1430_MEETINGS_PER_SEMESTER)
 
 
+def big_macs(annual_cost):
+    """Give back how many Big Macs the annual cost is."""
+    return annual_cost / COST_OF_BIGMAC
+
+
 # ---- PROGRAM ----
 
 def main():
@@ -48,6 +53,7 @@ def main():
     # Then ask for the credits this semester.
     total_cost = float(input("Enter the total cost for one year: "))
     credits_this_semester = int(input("Enter the number of credits this semester: "))
+    
   
     while True:
         print("1. Cost per semester")
@@ -55,6 +61,7 @@ def main():
         print("3. Cost per day")
         print("4. Cost per credit")
         print("5. Cost per class")
+        print("6. Cost in Big Macs")
         print("Q. Quit")
 
         choice = input("Choose an option: ")
@@ -68,6 +75,8 @@ def main():
             print(f"Cost per credit: ${cost_per_credit(total_cost, credits_this_semester):.2f}")
         if choice == "5":
             print(f"Cost per class: ${cost_per_class(total_cost, credits_this_semester):.2f}")
+        if choice == "6":
+            print(f"With your tuition, you could buy {big_macs(total_cost):.0f} Big Macs.")
         if choice == "Q":
             break
 

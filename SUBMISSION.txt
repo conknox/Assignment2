@@ -1,14 +1,14 @@
-Status : INCOMPLETE - at least one check did not pass
-Points : 39 / 40  (from check.py; counts only when the Git and GitHub checks pass)
+Status : COMPLETE - all checks passed
+Points : 40 / 40  (from check.py; counts only when the Git and GitHub checks pass)
 
 CS 1430 Assignment 2: The Cost of College
-GitHub user : unknown
-Repository  : unknown
-Commit      : unknown
-Message     : 
-Author      : 
-Committed   : 
-Checked     : 2026-10-25 19:33:59 Central Daylight Time
+GitHub user : conknox
+Repository  : https://github.com/conknox/Assignment2
+Commit      : 0dcc594429b66a3b1bd61f5e0c236d981fe60506
+Message     : followed steps
+Author      : Conway Knox <knoxco@uwplatt.edu>
+Committed   : 2026-10-25T19:40:46-05:00
+Checked     : 2026-10-25 19:46:27 Central Daylight Time
 Python      : 3.14.8
 
 ================================================================
@@ -31,25 +31,29 @@ CHECK RESULTS
 
 --- Your program (10 points) ---
 [PASS] The menu runs from start to Q without an error  (5/5 pts)
-[FAIL] Options 1 to 5 print all five amounts  (4/5 pts)
-   > Test 1 of 3 (Example A): with cost 14601 and 15 credits, these amounts were not found in output:
-   >     7300.50  (from cost_per_semester)
-   > Each amount must be printed with exactly two decimals, like 97.34.
-   > check.py types: cost, credits, 1, 2, 3, 4, 5, Q.
+[PASS] Options 1 to 5 print all five amounts  (5/5 pts)
 
 --- Git and GitHub (required for your points to count) ---
 [PASS] Git is installed
 [PASS] This folder is a Git repository
-[FAIL] You have committed your own work
-   > So far there is only the template's first commit.
-   > In Source Control, type a message and click Commit.
+[PASS] You have committed your own work
+[PASS] Your latest changes are committed
+[PASS] Your repo is connected to GitHub
+[PASS] Your commit is pushed to GitHub
 
-POINTS FROM check.py: 39 / 40
+POINTS FROM check.py: 40 / 40
 
 ================================================================
 PROGRAM OUTPUT  (typed: 14601, 15, 1, 2, 3, 4, 5, Q)
 ================================================================
-Enter the total cost for one year: Enter the number of credits this semester: How many bathroom breaks do you take per day in class? 1. Cost per semester
+Enter the total cost for one year: Enter the number of credits this semester: 1. Cost per semester
+2. Cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+Q. Quit
+Choose an option: Cost per semester: $7300.50
+1. Cost per semester
 2. Cost per month
 3. Cost per day
 4. Cost per credit
